@@ -1,0 +1,19 @@
+<div class="formCadastro">
+  <form [formGroup]="cadastroForm" (ngSubmit)="enviarCadastro()">
+    <h2>Crie sua conta</h2> <label for="nome"> Nome </label>
+    <input type="text" id="nome" formControlName="nome" />
+
+    <label for="email"> E-mail </label>
+    <input type="email" id="email" formControlName="email" />
+
+    <label for="senha"> Senha </label>
+    <input type="password" id="senha" formControlName="senha" />
+
+    <label for="data"> Data de Nascimento </label>
+    <input type="date" id="data" formControlName="data" />
+
+    <label for="telefone"> Telefone </label>
+    <input type="tel" id="telefone" formControlName="telefone" />
+
+    <button type="submit">Enviar</button> </form>
+</div>

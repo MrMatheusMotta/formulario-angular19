@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormcontatoComponent } from './formcontato/formcontato/formcontato.component';
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,149 @@
+/* Importa uma fonte do Google Fonts para um visual moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos para o contêiner principal do formulário */
+.formCadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que o formulário ocupe a altura total da tela */
+  background-color: #eef2f7; /* Um fundo azul acinzentado suave */
+  font-family: 'Poppins', sans-serif; /* Aplica a fonte importada */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para o formulário em si */
+.formCadastro form {
+  background-color: #ffffff; /* Fundo branco para o formulário */
+  padding: 45px;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+  width: 100%;
+  max-width: 450px; /* Aumenta ligeiramente a largura máxima */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título do formulário (opcional, adicionei para exemplo) */
+.formCadastro h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+/* Estilos para os rótulos (labels) */
+.formCadastro label {
+  margin-bottom: 8px;
+  font-weight: 500; /* Um pouco mais encorpado */
+  color: #555;
+  font-size: 0.98em;
+}
+
+/* Estilos para os campos de input */
+.formCadastro input[type="text"],
+.formCadastro input[type="email"],
+.formCadastro input[type="password"],
+.formCadastro input[type="date"],
+.formCadastro input[type="tel"] {
+  width: 100%; /* Ocupa 100% da largura do pai */
+  padding: 14px 15px; /* Mais preenchimento */
+  margin-bottom: 22px; /* Espaço abaixo maior */
+  border: 1px solid #e0e0e0; /* Borda mais suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 1em;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+/* Efeito de foco nos inputs */
+.formCadastro input:focus {
+  border-color: #007bff; /* Azul vibrante ao focar */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Sombra de foco mais visível */
+}
+
+/* Estilos para o botão de enviar */
+.formCadastro button {
+  background-color: #007bff; /* Azul principal */
+  color: white;
+  padding: 16px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15em; /* Fonte um pouco maior */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 15px;
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Sombra para o botão */
+}
+
+/* Efeito de hover no botão */
+.formCadastro button:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  transform: translateY(-3px); /* Movimento para cima mais acentuado */
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Sombra maior no hover */
+}
+
+/* Efeito de botão ativo (quando clicado) */
+.formCadastro button:active {
+  transform: translateY(0); /* Retorna à posição original */
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2); /* Sombra menor */
+}
+
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .formCadastro {
+    padding: 15px;
+  }
+
+  .formCadastro form {
+    padding: 30px;
+    margin: 15px; /* Garante margem em telas menores */
+  }
+
+  .formCadastro h2 {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+  }
+
+  .formCadastro input {
+    padding: 12px;
+    margin-bottom: 18px;
+  }
+
+  .formCadastro button {
+    padding: 14px 20px;
+    font-size: 1.05em;
+  }
+}
+
+@media (max-width: 480px) {
+  .formCadastro form {
+    padding: 25px;
+  }
+
+  .formCadastro h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .formCadastro label {
+    font-size: 0.9em;
+  }
+
+  .formCadastro input {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .formCadastro button {
+    padding: 12px 18px;
+    font-size: 1em;
+  }
+}

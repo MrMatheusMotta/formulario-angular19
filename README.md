@@ -6,7 +6,7 @@ Este projeto Angular demonstra a implementação e estilização de dois formul�
 
 Estrutura do Projeto
 O projeto está organizado em componentes dedicados a cada formulário, seguindo as boas práticas do Angular.
-
+```
 src/
 ├── app/
 │   ├── app.component.html
@@ -25,6 +25,8 @@ src/
 │       │   ├── formcontato.component.css
 │       │   └── formcontato.component.ts
 └── main.ts
+
+```
 Funcionalidades
 1. Formulário de Contato (FormcontatoComponent)
 Campos: Nome, E-mail, Assunto (com textarea).

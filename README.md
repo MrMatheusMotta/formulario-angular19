@@ -1,59 +1,116 @@
-# Forms
+Com certeza! Vamos criar um arquivo README.md bem completo para o seu projeto Angular. Ele ajudará a documentar seu trabalho e facilitar a vida de quem for usá-lo ou contribuir.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Formulários Angular Simples
+Descrição do Projeto
+Este projeto Angular demonstra a implementação e estilização de dois formulários reativos: um Formulário de Contato e um Formulário de Cadastro. Utiliza os Reactive Forms do Angular para gerenciamento de estado e validação de campos, e CSS puro para um design moderno e responsivo.
 
-## Development server
+Estrutura do Projeto
+O projeto está organizado em componentes dedicados a cada formulário, seguindo as boas práticas do Angular.
 
-To start a local development server, run:
+src/
+├── app/
+│   ├── app.component.html
+│   ├── app.component.css
+│   ├── app.component.ts
+│   ├── app.config.ts
+│   ├── app.routes.ts                <-- Definição das rotas
+│   ├── cadastro/
+│   │   ├── cadastro/                 <-- Componente de Cadastro
+│   │   │   ├── cadastro.component.html
+│   │   │   ├── cadastro.component.css
+│   │   │   └── cadastro.component.ts
+│   └── formcontato/
+│       ├── formcontato/              <-- Componente de Contato
+│       │   ├── formcontato.component.html
+│       │   ├── formcontato.component.css
+│       │   └── formcontato.component.ts
+└── main.ts
+Funcionalidades
+1. Formulário de Contato (FormcontatoComponent)
+Campos: Nome, E-mail, Assunto (com textarea).
 
-```bash
+Validação:
+
+Nome: Obrigatório.
+
+E-mail: Obrigatório e formato de e-mail válido.
+
+Assunto: Obrigatório e com no mínimo 5 caracteres.
+
+Comportamento: Exibe um alerta de sucesso e limpa o formulário após o envio válido. Alerta em caso de campos inválidos.
+
+2. Formulário de Cadastro (CadastroComponent)
+Campos: Nome, E-mail, Senha, Data de Nascimento, Telefone.
+
+Validação:
+
+Nome: Obrigatório.
+
+E-mail: Obrigatório e formato de e-mail válido.
+
+Senha: Obrigatória e com no mínimo 6 caracteres.
+
+Data de Nascimento: Obrigatória.
+
+Telefone: Obrigatório.
+
+Comportamento: Exibe um alerta de sucesso e limpa o formulário após o envio válido. Alerta em caso de campos inválidos.
+
+Tecnologias Utilizadas
+Angular CLI: Ferramenta para iniciar, desenvolver e manter aplicativos Angular.
+
+Angular (v17+): Framework JavaScript para construção de aplicações web.
+
+Reactive Forms: Módulo do Angular para gerenciamento de formulários.
+
+HTML5: Estrutura dos formulários.
+
+CSS3: Estilização e responsividade dos formulários.
+
+Google Fonts (Poppins): Utilizado para uma tipografia moderna.
+
+Como Rodar o Projeto
+Siga os passos abaixo para clonar o repositório e executar o projeto em sua máquina local.
+
+Pré-requisitos
+Certifique-se de ter as seguintes ferramentas instaladas:
+
+Node.js (versão 18.x ou superior)
+
+npm (gerenciador de pacotes do Node.js)
+
+Angular CLI (instale globalmente com npm install -g @angular/cli)
+
+Instalação
+Clone o repositório:
+```
+git clone https://github.com/MrMatheusMotta/formulario-angular19.git
+cd forms # ou o nome da pasta principal do seu projeto
+
+```
+
+
+Instale as dependências:
+
+```
+npm install
+
+```
+Executando a Aplicação
+
+Inicie o servidor de desenvolvimento:
+
+```
 ng serve
+
 ```
+Acesse no navegador:
+Abra seu navegador e navegue para http://localhost:4200/.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Para ver o Formulário de Contato, acesse: http://localhost:4200/ (rota padrão).
 
-## Code scaffolding
+Para ver o Formulário de Cadastro, acesse: http://localhost:4200/cadastro.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Contribuição
+Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou encontrar bugs, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
